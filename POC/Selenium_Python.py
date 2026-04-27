@@ -119,16 +119,17 @@ time.sleep(2)
 # Switch to alert and accept it (click OK)
 alert = driver.switch_to.alert
 alert.accept()
-
 time.sleep(3)
 
-text=driver.find_element(By.XPATH, "//legend[contains(.,'Element Displayed Example')]")
-driver.execute_script("arguments[0].scrollIntoView();",text)
+# Navigate to the "Element Displayed Example" section on the page
+text = driver.find_element(By.XPATH, "//legend[contains(.,'Element Displayed Example')]")
+# Scroll to the section so it is visible on the screen
+driver.execute_script("arguments[0].scrollIntoView();", text)
 text.click()
 
+# Enter a sample name into the input field, hide and show field
 driver.find_element(By.CSS_SELECTOR, "input[id='displayed-text']").send_keys('Vamsi')
 driver.find_element(By.XPATH, "//input[@class='btn-style class2']").click()
 driver.find_element(By.CSS_SELECTOR, "input[value='Show']").click()
-
 time.sleep(5)
 driver.quit()
