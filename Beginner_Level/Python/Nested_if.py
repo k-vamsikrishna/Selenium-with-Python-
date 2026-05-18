@@ -3,7 +3,7 @@ own_car = 'False'
 
 if age >= 18:
 
-    if own_car == 'True':
+    if own_car == 'False':
         print("Drive your own car")
     else:
         print("Work hard and buy a car")

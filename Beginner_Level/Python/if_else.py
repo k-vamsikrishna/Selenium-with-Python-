@@ -3,9 +3,9 @@
 #     print("You can apply for licence")
 # print("Speed trills but kills")
 
-# is_adult = True
-# is_adult = 12
-#
+is_adult = True
+is_adult = 12
+# 
 # if is_adult:
 #     print("is adult")
 #
@@ -13,7 +13,7 @@
 #     print("adult")
 #
 # else:
-#     print("not an adult")
+# #    print("not an adult")
 
 
 
