@@ -21,24 +21,34 @@ for i in range(1,11):
     print (i)
 '''
 
-'''
-marks = int(input("Enter the value: "))
 
-if marks > 80:
-    print ("A Grade")
-elif marks > 50:
-    print ("B Grade")
-else:
-    print ("Fail")
-'''
+# marks = int(input("Enter the value: "))
 
-'''
-numbers = [1, 2, 3, 4]
-even = [num for num in numbers if num % 2 == 0]
-print(even)
-'''
+# if marks > 80:
+#     print ("A Grade")
+# elif marks > 50:
+#     print ("B Grade")
+# else:
+#     print ("Fail")
 
-'''
-def test_add():
-    assert 2 + 3 == 5
-'''
+
+# numbers = [1, 2, 3, 4]
+# even = [num for num in numbers if num % 2 == 0]
+# print(even)
+
+# def test_add(a, b):
+#     return a + b
+
+# result = test_add(5, 10)
+# print("Result:", result)
+
+
+# name = 'Vamsi'
+# print (name[::-1])
+
+
+my_tuple = (1, 2, 3, 4)
+
+my_list = list(my_tuple)
+
+print(my_list)

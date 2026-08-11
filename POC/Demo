@@ -1,0 +1,23 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+# Launch Chrome browser
+driver = webdriver.Chrome()
+
+# Open the practice website
+driver.get("https://sauce-demo.myshopify.com/")
+driver.maximize_window()
+
+signinbutton = driver.find_element(By.XPATH, '//a[@id="customer_login_link"]')
+signinbutton.click()
+
+driver.implicitly_wait(10)
+
+Email_address = 'vamsikowluri@gmail.com'
+Password = 'Welcome@Cognine'
+
+driver.find_element(By.XPATH, '//input[@type="email"]').send_keys(Email_address)
+driver.find_element(By.CSS_SELECTOR, "input[id='customer_password']").send_keys(Password)
+
+driver.find_element(By.)
