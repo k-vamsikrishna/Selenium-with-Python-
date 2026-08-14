@@ -20,4 +20,13 @@ Password = 'Welcome@Cognine'
 driver.find_element(By.XPATH, '//input[@type="email"]').send_keys(Email_address)
 driver.find_element(By.CSS_SELECTOR, "input[id='customer_password']").send_keys(Password)
 
-driver.find_element(By.)
+driver.find_element(By.XPATH, '//input[@type="submit"]').click
+
+text = WebDriverWait(driver, 10).until("Account Details and Order History")
+
+element = driver.find_element(By.XPATH, "//div/h1[@class='accounts-title']")
+print(element.text)
+
+driver.find_element(By.XPATH, '//li/a[text()="Home"]').click
+
+time.sleep(10)
