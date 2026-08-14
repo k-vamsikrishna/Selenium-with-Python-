@@ -9,9 +9,9 @@ import time
 # 1. Common Pause Function
 
 def pause():
-    """
-    Pause execution for 2 seconds so each automation step can be observed clearly.
-    """
+    
+# Pause execution for 2 seconds so each automation step can be observed clearly.
+
     time.sleep(2)
 
 
